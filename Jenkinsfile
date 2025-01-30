@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         GIT_CRED = 'github-token-id' // Jenkins credentials ID for GitHub token
-        GIT_REPO = 'https://github.com/umar-fayaaz/micro_service.git' // GitHub repository URL
-        DOCKER_NETWORK = 'umar' // Custom Docker network name
+        GIT_REPO = 'https://github.com/Sanjana22-YA/micro_service-master.git' // GitHub repository URL
+        DOCKER_NETWORK = 'sanjana' // Custom Docker network name
     }
 
     stages {
