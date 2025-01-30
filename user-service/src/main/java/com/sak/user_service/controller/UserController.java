@@ -26,17 +26,17 @@ public class UserController {
     @PostMapping("/signup")
     public String signupUser(@ModelAttribute User user) {
         UserRepository.save(user);
-        return "redirect:http://65.2.189.85:8081/";
+        return "redirect:http://3.109.213.114:8081/";
     }
 
     @GetMapping("/login")
     public String login(Model model) {
         model.addAttribute("user", new User());
-        return "redirect:http://65.2.189.85:8083/auth/login";
+        return "redirect:http://3.109.213.114:8083/auth/login";
     }
 
     @GetMapping("/")
     public String home() {
-        return "redirect:http://65.2.189.85:8081";
+        return "redirect:http://3.109.213.114:8081";
     }
 }
