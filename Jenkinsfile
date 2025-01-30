@@ -13,7 +13,7 @@ pipeline {
                 script {
                     // Checkout code from GitHub using Jenkins credentials
                     checkout([$class: 'GitSCM', 
-                              branches: [[name: '*/master']], 
+                              branches: [[name: '*/main']], 
                               userRemoteConfigs: [[url: "${GIT_REPO}", credentialsId: "${GIT_CRED}"]]
                     ])
                 }
